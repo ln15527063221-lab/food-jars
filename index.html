@@ -1064,11 +1064,7 @@
             const items = getJarItems();
 
             if (items.length === 0) {
-                jar.innerHTML = `
-                    <div class="jar-empty-state">
-                        本周还没有消耗记录
-                    </div>
-                `;
+                jar.innerHTML = '';
                 return;
             }
 
